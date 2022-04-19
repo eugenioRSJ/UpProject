@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {}
+    "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {}
   },
   "projects": {
-    "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {
+    "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
+        "projectUniqueName": "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
         "projectName": "UpProject.API",
-        "projectPath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
+        "projectPath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
         "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
-        "outputPath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\obj\\",
+        "outputPath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config"

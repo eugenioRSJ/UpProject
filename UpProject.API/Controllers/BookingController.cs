@@ -12,7 +12,7 @@ namespace UpProject.API.Controllers
     [Route("book")]
     public class BookingController : ControllerBase
     {
-        [HttpGet("{id}")]
+        [HttpGet("{id}/loan")]
         public async Task<IActionResult> BookAvailable([FromRoute] ulong id, [FromServices] IBookingService service)
         {
             var result = await service.BookAvailable(id);
@@ -21,7 +21,7 @@ namespace UpProject.API.Controllers
             return UnprocessableEntity(result);
         }
         
-        [HttpPost("{id}")]
+        [HttpPost("{id}/loan")]
         public async Task<IActionResult> BorrowBook([FromRoute] ulong id, [FromBody] Booking booking, [FromServices] IBookingService service)
         {
             var result = await service.BorrowBook(id, booking);

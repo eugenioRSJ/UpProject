@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UpProject.API.Commands;
+using UpProject.API.Helpers;
 using UpProject.API.Models;
 using UpProject.API.Services.Contracts;
 
@@ -36,12 +37,10 @@ namespace UpProject.API.Services
             var book = bookCommand.Data as Book;
             if(book.AddBooking(booking))
             {
-            
                 return await _bookService.ReplaceOneAsync(book);
-    
             }
             
-            return new GenericCommandResult(false, "Error booking book", booking);
+            return new GenericCommandResult(false, Messages.ErrorBooking, booking);
         }
     }
 }

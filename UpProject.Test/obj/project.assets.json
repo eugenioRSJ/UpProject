@@ -6852,11 +6852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
+      "projectUniqueName": "C:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
       "projectName": "UpProject.Test",
-      "projectPath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
+      "projectPath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
       "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
-      "outputPath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\obj\\",
+      "outputPath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6871,8 +6871,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {
-              "projectPath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj"
+            "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj": {
+              "projectPath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj"
             }
           }
         }

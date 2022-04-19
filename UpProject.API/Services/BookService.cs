@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using UpProject.API.Commands;
+using UpProject.API.Helpers;
 using UpProject.API.Models;
 using UpProject.API.Models.DTO;
 using UpProject.API.Models.Search;
@@ -26,9 +27,9 @@ namespace UpProject.API.Services
         public async Task<GenericCommandResult> FilterByAsync(BookSearch search)
         {
             var result = await _repository.FilterByAsync(search.GetSearch());
-            if (result is null) return new GenericCommandResult(false, "Error when searching", search);
+            if (result is null) return new GenericCommandResult(false, Messages.ErrorSearch, search);
             
-            return new GenericCommandResult(true, "Success when searching", result.OrderBy(x=> x.Bookings.Count));
+            return new GenericCommandResult(true, Messages.SuccessGeneric, result.OrderBy(x=> x.Bookings.Count));
         }
 
         public async Task<GenericCommandResult> InsertOneAsync(Book book)
@@ -36,13 +37,13 @@ namespace UpProject.API.Services
             try
             {
                 await _repository.InsertOneAsync(book);
-                return new GenericCommandResult(true, "Data saved successfully", book);
+                return new GenericCommandResult(true, Messages.SuccessInsert, book);
             }
             catch (MongoWriteException ex)
             {
                 var error = ex.WriteError.Code;
                 if (error == 11000)
-                    return new GenericCommandResult(false, "Identifier already registered", book);
+                    return new GenericCommandResult(false, Messages.IdentifyExist, book);
                 else
                     throw ex;
             }
@@ -55,7 +56,7 @@ namespace UpProject.API.Services
                 return bookCommand;
 
             await _repository.ReplaceOneAsync(book);
-            return new GenericCommandResult(true, "Data updated successfully", book);
+            return new GenericCommandResult(true, Messages.SuccessUpdate, book);
         }
 
         public async Task<GenericCommandResult> DeleteByIdAsync(ulong id)
@@ -64,16 +65,16 @@ namespace UpProject.API.Services
             if(!bookCommand.Success)
                 return bookCommand;
             await _repository.DeleteByIdAsync(id);
-            return new GenericCommandResult(true, "Data deleted successfully", null);
+            return new GenericCommandResult(true, Messages.SuccessDelete, null);
         }
 
         public async Task<GenericCommandResult> FindByIdAsync(ulong id)
         {
             var result = await _repository.FindByIdAsync(id);
             if(result == null)
-                return new GenericCommandResult(false, "Identifier does not exist", null);
+                return new GenericCommandResult(false, Messages.IdentifyNotExist, null);
 
-            return new GenericCommandResult(true, "Success when searching", result);
+            return new GenericCommandResult(true, Messages.SuccessSearch, result);
         }
 
     }

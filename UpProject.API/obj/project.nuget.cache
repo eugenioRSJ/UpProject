@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lQxQfS+l8kRW3k+zjS9N5hOsyg9cGb2XWMVCNPrh+IDhKFAqFNsmrE2XnExB7ufWxnx7+sfZsfocd4F60UnaDA==",
+  "dgSpecHash": "8o1PbXOJJrnaKNCMgZ02TCMxiGziSMWmyCZhrKJCxpBYJNed/bt1pbSb83s66gAxxGuJg0tKGaww/ZNNgMtfgQ==",
   "success": true,
-  "projectFilePath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
+  "projectFilePath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.API\\UpProject.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eugen\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\eugen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

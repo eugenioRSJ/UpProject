@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SpQ54MXO9lEPQP3ObNXzUqNs8bxuNNry/zz5LlCGiQokgmyNBKQgZ6LsBHVkcfnUzL7yGLjsj8MCMt8igOuuGg==",
+  "dgSpecHash": "ytBuxrvk/FwCjhYIo+9XnrdZg2yu4EX53DOZQ9Q89GesiyWy9gX5ui99JNlo0M/Y+FGomSevvNE/U7rqIC02fg==",
   "success": true,
-  "projectFilePath": "c:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
+  "projectFilePath": "C:\\Dev\\UpFlux\\UpProject\\UpProject.Test\\UpProject.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eugen\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\eugen\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
